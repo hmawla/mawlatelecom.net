@@ -59,13 +59,15 @@ body {
 }
 /*-- navigation --*/
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #555;
-    background-color: #e7e7e7;
+    color: #ffffff;
+	background-color: #77fff8;
+	font-weight: bold;
+	border-bottom: 1px solid #77fff8;
 }
 .navbar-default {
-	background-color:rgba(0,0,0,0.32);
-	border-color:transparent;
-}
+	background-color:rgb(255, 255, 255);
+	border-bottom: 2px solid #77fff8
+}	
 .navbar-default .navbar-brand {
     color: #FFF;
 }
@@ -79,22 +81,25 @@ body {
     background-color: transparent;
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: #555;
-    background-color: #e7e7e7;
+    color: #555555;
+	background-color: #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
 }
 .navbar-default .navbar-nav>li>a {
     color: #FFF;
 }
 .navbar-brand h1 {
 	font-size:30px;
-	font-weight:normal;
+	font-weight:bold;
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
+	color: black;
 }
 .navbar-default .navbar-nav>li>a {
-    color: #FFF;
+    color: rgb(5, 5, 5);
     font-size: 17px;
-    font-weight:200;
+	font-weight:200;
+	border-bottom: 1px solid white;
 }
 /*-- /navigation --*/
 /*-- W3layouts --*/
@@ -163,10 +168,10 @@ body {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	background: rgba(0,0,0,0.65);
+	background: rgba(255, 255, 255, 0.65);
 	width: 100%;
 	padding: 30px 0;
-	color: #FFF;
+	color: black;
 	-webkit-transform: translateY(100%);
 	-ms-transform: translateY(100%);
 	-o-transform: translateY(100%);
@@ -184,17 +189,18 @@ body {
 	opacity: 1;
 }
 .slider-wrapper h3 {
-	color: #00c5b9;
+	color: #008a7c;
 	text-align:center;
 	font-size: 2em;
-	font-weight:normal;
+	font-weight:bold;
 	font-family: 'Montserrat', sans-serif;
 	margin-bottom:10px;
+
 }
 .slider-wrapper p {
 	text-align:center;
 	font-size: 17px;
-    color: #DADADA;
+    color: black;
 	font-weight:inherit;
 	line-height: 1.4em;
 /*-- Agile ITS --*/
