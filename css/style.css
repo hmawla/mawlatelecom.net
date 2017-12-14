@@ -60,13 +60,13 @@ body {
 /*-- navigation --*/
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: #ffffff;
-	background-color: #77fff8;
+	background-color: #29b6f6;
 	font-weight: bold;
-	border-bottom: 1px solid #77fff8;
+	border-bottom: 1px solid #29b6f6;
 }
 .navbar-default {
 	background-color:rgb(255, 255, 255);
-	border-bottom: 2px solid #77fff8
+	border-bottom: 2px solid #29b6f6;
 }	
 .navbar-default .navbar-brand {
     color: #FFF;
@@ -257,7 +257,7 @@ section.about-us p.text-center {
 /*-- /about section --*/
 /*-- skills section --*/
 section.our-skills {
-	background:url(../images/skill.jpg) no-repeat;
+	background:url(../images/image/skill.jpeg) no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size:100% 100%;
@@ -343,7 +343,7 @@ section.our-services i.fa:hover {
 /*-- /services section --*/ 
 /*-- portfolio section --*/
 section.our-portfolio {
-	background:url(../images/port.jpg) no-repeat;
+	background:url(../images/image/portfolio.jpg) no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size:100% 100%;
@@ -522,7 +522,7 @@ section.map iframe.googlemaps {
 /*-- /map section --*/
 /*-- contact section --*/
 section.contact-us {
-	background:url(../images/contact.jpg) no-repeat;
+	background:url(../images/image/contactus.jpg) no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size:100% 100%;
