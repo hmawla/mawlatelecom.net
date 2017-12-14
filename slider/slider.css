@@ -1,18 +1,14 @@
 .slider{
+    margin-left: 15%;
+    margin-right: 15%;
 
-}
-p{
-    font-size: 40px;
 }
 .item1{
     display: inline-block;
+    height: 70%;
 }
 .item2{
     display: inline-block;
-}
-.item1 :nth-child(1){
-    
-}
-.item2 :nth-child(1){
-    
+    height: 70%;
+
 }
