@@ -1,0 +1,18 @@
+.slider{
+
+}
+p{
+    font-size: 40px;
+}
+.item1{
+    display: inline-block;
+}
+.item2{
+    display: inline-block;
+}
+.item1 :nth-child(1){
+    
+}
+.item2 :nth-child(1){
+    
+}
