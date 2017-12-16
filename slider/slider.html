@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="slider.css" rel="stylesheet" type="text/css" media="all" />
 <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
 
@@ -5,3 +6,12 @@
     <img class="item1" src="../images/parted/slide1p1.jpg" />
     <img class="item2" src="../images/parted/slide1p2.jpg" />
 </div>
+<script>
+    var w = window,
+            d = document,
+            e = d.documentElement,
+            g = d.getElementsByTagName('body')[0],
+            x = w.innerWidth || e.clientWidth || g.clientWidth,
+            y = w.innerHeight || e.clientHeight || g.clientHeight;
+        alert(x + ' × ' + y);
+</script>
