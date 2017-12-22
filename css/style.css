@@ -60,13 +60,12 @@ body {
 /*-- navigation --*/
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: #ffffff;
-	background-color: #29b6f6;
+	background-color: #19bebe;
 	font-weight: bold;
-	border-bottom: 1px solid #29b6f6;
 }
 .navbar-default {
-	background-color:rgb(255, 255, 255);
-	border-bottom: 2px solid #29b6f6;
+	background-color:#FFFFFFAA;
+	border-bottom: 2px solid #19bebe;
 }	
 .navbar-default .navbar-brand {
     color: #FFF;
@@ -81,12 +80,8 @@ body {
     background-color: transparent;
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: #555555;
-	background-color: #e7e7e7;
-	border-bottom: 1px solid #e7e7e7;
-}
-.navbar-default .navbar-nav>li>a {
-    color: #FFF;
+    color: #FFFFFF;
+	background-color: #999999AA;
 }
 .navbar-brand h1 {
 	font-size:30px;
@@ -96,10 +91,9 @@ body {
 	color: black;
 }
 .navbar-default .navbar-nav>li>a {
-    color: rgb(5, 5, 5);
+    color: #19bebe;
     font-size: 17px;
-	font-weight:200;
-	border-bottom: 1px solid white;
+	font-weight:bold;
 }
 /*-- /navigation --*/
 /*-- W3layouts --*/
@@ -225,7 +219,7 @@ body {
 	border-radius: 50%;
 }
 .control-buttons li.active {
-	background: #00c5b9;
+	background: #19bebe;
 }
 .authors {
 	text-align: center;
@@ -705,7 +699,7 @@ section.contact-us form button {
 .btn-outline1:focus,
 .btn-outline1:active {
     border: solid 1px #fff;
-    color: #18bc9c;
+    color: #19bebe;
     background: #fff;
 }
 /*-- /contact section --*/
@@ -977,8 +971,6 @@ section.our-services p.serv {
     height: 305px;
 }
 ul.nav.navbar-nav.navbar-right {
-    margin: 0px;
-	background-color: rgba(0, 0, 0, 0.55);
     text-align: center;
 }
 .navbar-toggle {
@@ -989,7 +981,7 @@ ul.nav.navbar-nav.navbar-right {
     background-color: #FFF;
 }
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #000;
+    background-color: #999999;
 }
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
     margin-left: 25px;
