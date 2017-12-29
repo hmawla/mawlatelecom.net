@@ -251,13 +251,14 @@ section.about-us p.text-center {
 /*-- /about section --*/
 /*-- skills section --*/
 section.our-skills {
-	background:url("../images/skillsb.jpg") no-repeat;
+	background:url("../images/skillsb.jpg");
+	background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-	-webkit-background-size:100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
+	-webkit-background-size:cover;
+	-moz-background-size: cover;
+	-o-background-size: ;
 	padding:100px 0;
 }
 section.our-skills  h3.text-center {
@@ -337,13 +338,14 @@ section.our-services i.fa:hover {
 /*-- /services section --*/ 
 /*-- portfolio section --*/
 section.our-portfolio {
-	background:url("../images/image/portfolio.jpg") no-repeat;
+	background:url("../images/skills4b.jpg") no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size:100% 100%;
-	-webkit-background-size:100% 100%;
-	-moz-background-size:100% 100%;
-	-o-background-size:100% 100%;
+    background-size: cover;
+	-webkit-background-size:cover;
+	-moz-background-size: cover;
+	-o-background-size: ;
 	padding:100px 0;
 }
 section.our-portfolio h3.text-center{ 
