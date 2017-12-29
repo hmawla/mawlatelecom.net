@@ -338,14 +338,14 @@ section.our-services i.fa:hover {
 /*-- /services section --*/ 
 /*-- portfolio section --*/
 section.our-portfolio {
-	background:url("../images/skills4b.jpg") no-repeat;
+	background:url("../images/portfolio1.jpg") no-repeat;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 	-webkit-background-size:cover;
 	-moz-background-size: cover;
-	-o-background-size: ;
+	-o-background-size: cover;
 	padding:100px 0;
 }
 section.our-portfolio h3.text-center{ 
@@ -518,13 +518,14 @@ section.map iframe.googlemaps {
 /*-- /map section --*/
 /*-- contact section --*/
 section.contact-us {
-	background:url(../images/image/contactus.jpg) no-repeat;
+	background:url(../images/skills3b.jpg);
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size:100% 100%;
-	-webkit-background-size:100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
+    background-size: cover;
+	-webkit-background-size:cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	padding:100px 0;
 }
 section.contact-us h3.text-center {
