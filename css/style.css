@@ -300,10 +300,11 @@ section.our-services p.text-center {
 	text-align:center;
 	/*-- W3layouts --*/
 	margin-bottom: 50px;
+	
 }
 section.our-services h4.text-center{
 	font-size:25px;
-	font-weight:normal;
+	font-weight:bold;
     padding: 25px 0 20px;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -329,7 +330,7 @@ section.our-services i.fa {
     -moz-transition: 0.7s all;
     -o-transition: 0.7s all;
     -ms-transition: 0.7s all;
-    background-color: #31708f;
+    background-color: #19bebe;
 }
 section.our-services i.fa:hover {
 	background-color:#163A4C;
@@ -728,7 +729,9 @@ section.footer .copyright p a:hover {
 }
 /*-- /footer section --*/
 /*-- sliding animations --*/
-.slideanim {visibility:hidden;}
+.slideanim {
+	visibility:hidden;
+}
 .slide {
     /* The name of the animation */
     animation-name: slide;
@@ -737,7 +740,8 @@ section.footer .copyright p a:hover {
     animation-duration: 1s; 
     -webkit-animation-duration: 1s;
     /* Make the element visible */
-    visibility: visible; 
+	visibility: visible; 
+	
 }
 
 /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
@@ -1152,8 +1156,9 @@ ul.social-icons2 {
 .serv-info {
 	margin-bottom:30px;
 }
+.serv-info1{
+	background-color:#19bebe;
 }
-
 @media (max-width: 414px) {
 	section.about-us h2.text-center {
 		padding:0 0 20px;
