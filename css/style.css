@@ -351,9 +351,9 @@ section.our-portfolio {
 }
 section.our-portfolio h3.text-center{ 
 	font-size:40px;
-	font-weight:normal;
+	font-weight:bold;
 	padding:20px 0;
-	color:#fff;
+	color:#19bebe;
 	font-family: 'Montserrat', sans-serif;
 }
 section.our-portfolio p.text-center {
