@@ -4,15 +4,18 @@ CHANGELOG
 -NOTE: Most changelogs can be found in github commits.
 
 ---2/1/2018
+
 	[DONE] -MTWEB: HTML Skeleton Fully Finished.
 	[DONE] -MTWEB: Other basic stuff fixed.
 	
 ---8/1/2018
+
 	-MTWEB: Navagation in map.
 	-MTWEB: Call button.
 	-
 	
 ---[late]/1/2018
+
 	[DELAYED] -MTWEB: Website can now detect the nearest branch.
 	-
 	
@@ -34,6 +37,7 @@ CHANGELOG
 	-MTWEB: Email ready mohammad.almawla@mawlatelecom.net (any better name?)
 	
 ---X/[MID]/2018
+
 	-MTWEB: Ready for some PHP.
 	-MTWEB: Added SignUp and SignIn buttons.
 	-MTWEB: Added SignUp Page.
