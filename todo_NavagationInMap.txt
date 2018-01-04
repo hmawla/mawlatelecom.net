@@ -1,0 +1,30 @@
+Navagation In Map
+
+~~TODO~~
+
+	1-Pin all the branches on the map.
+	2-Control phone's GPS through the website.
+	3-Find the nearest btanch using GPS data.
+	4-Switch to map app and navigate.
+	
+	.1{
+		a) Check if the map can accept more than 1 pin.
+		b) find the acuurate location of each branch.
+		c) Get a phone number from each branch.
+		d) Get a frontal image of each branch.
+		
+		--if a is true move on.
+	}
+	
+	.2{
+		a) Find the code that allows conrolling the GPS.
+		b) Get phone's coordinates using the code.
+		c) Store this location locally if needed.
+	}
+	
+	.3{
+		a) Compare phone location coordinates with branch's.
+		b) Find the nearest branch.
+		c) Store nearest branch locally if needed.
+	}
+	

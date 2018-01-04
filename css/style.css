@@ -157,7 +157,7 @@ body {
 }
 
 /** call button  **/
-.callus {
+.callus, .callus:visited {
     border: 3px solid #fff;
     color: #fff;
     display: inline-block;
@@ -183,10 +183,10 @@ body {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	background: rgba(255, 255, 255, 0.65);
+	background: rgba(0,0,0,0.65);
 	width: 100%;
 	padding: 30px 0;
-	color: black;
+	color: #FFF;
 	-webkit-transform: translateY(100%);
 	-ms-transform: translateY(100%);
 	-o-transform: translateY(100%);
@@ -204,18 +204,17 @@ body {
 	opacity: 1;
 }
 .slider-wrapper h3 {
-	color: #008a7c;
+	color: #00c5b9;
 	text-align:center;
 	font-size: 2em;
-	font-weight:bold;
+	font-weight:normal;
 	font-family: 'Montserrat', sans-serif;
 	margin-bottom:10px;
-
 }
 .slider-wrapper p {
 	text-align:center;
 	font-size: 17px;
-    color: black;
+    color: #DADADA;
 	font-weight:inherit;
 	line-height: 1.4em;
 /*-- Agile ITS --*/
