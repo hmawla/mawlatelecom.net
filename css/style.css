@@ -157,9 +157,9 @@ body {
 }
 
 /** call button  **/
-.callus, .callus:visited {
-    border: 3px solid #fff;
-    color: #fff;
+.callus, .callus:visited, .callus:active, .callus:focus{
+    border: 3px solid black;
+    color: black;
     display: inline-block;
     font-size: 40px;
 	font-weight: bold; 
@@ -172,10 +172,9 @@ body {
 	min-width:40%;
 }
 .callus:hover{
-	color:white;
-	background-color:#19bebe44;
+	color:black;
+	background-color:#19bebe99;
 }
-
 /**
  * ---[Caption] ---------------------- 
  **/
@@ -281,7 +280,7 @@ section.our-skills {
 	-o-background-size:cover ;
 	padding:100px 0;
 }
-section.our-skills  h3.text-center {
+section.our-skills  h2.text-center {
 	font-size:40px;
 	font-weight:normal;
 	padding:20px 0;
