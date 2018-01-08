@@ -1,0 +1,9 @@
+#target{
+    color: blue;
+    background: yellow;
+}
+#coordinates{
+    position: fixed;
+    background: yellow;
+    color: black;
+}
