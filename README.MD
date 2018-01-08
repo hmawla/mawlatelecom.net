@@ -10,7 +10,7 @@ CHANGELOG
 	
 ---8/1/2018
 
-	-MTWEB: Navagation in map.
+	[DELAYED] -MTWEB: Navagation in map.
 	[DONE] -MTWEB: Call button.
 	-
 	
