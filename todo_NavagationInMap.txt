@@ -7,7 +7,7 @@ Navagation In Map
 	3-Find the nearest btanch using GPS data.
 	4-Switch to map app and navigate.
 	
-	.1{p
+	.1{
 		a) Check if the map can accept more than 1 pin.
 		b) find the acuurate location of each branch.
 		c) Get a phone number from each branch.
