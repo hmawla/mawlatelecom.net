@@ -10,23 +10,23 @@ CHANGELOG
 	
 ---8/1/2018
 
-	[DELAYED] -MTWEB: Navagation in map.
+	[WORKING] -MTWEB: Navagation in map.
 	[DONE] -MTWEB: Call button.
 	-
 	
 ---[late]/1/2018
 
-	[DELAYED] -MTWEB: Website can now detect the nearest branch.
+	[WORKING] -MTWEB: Website can now detect the nearest branch.
 	-
 	
 ---X/2/2018
 
-	-MTWEB: Added loading screen.
+	[DELAYED] -MTWEB: Added loading screen.
 	[DONE] -MTWEB: twitter account ready.
 	[DONE] -MTWEB: Facebook account ready.
 	-MTWEB: Instagram account ready.
 	-MTWEB: G+ account ready.
-	-MTWEB: Whatsapp business account checked.
+	[DELAYED] -MTWEB: Whatsapp business account checked.
 	
 	-Server ready to be used through GoDaddy.
 	
