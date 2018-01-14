@@ -1,3 +1,4 @@
+/*Main loading screen style id*/
 #loadingscreen{
     background-color: cyan;
     width: 100%;
@@ -8,6 +9,8 @@
     opacity: 1;
     z-index: 9999;
 }
+
+/*Loading screen items like h1 and others*/
 #loadingscreen > h1{
     font-size: 400px;
     margin: auto;

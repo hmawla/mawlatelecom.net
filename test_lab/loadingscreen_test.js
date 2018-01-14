@@ -1,13 +1,21 @@
+
+
 //prevent scrolling
 document.body.style.overflow = 'hidden';
 
+
 //keeps calling until the page stops loading
 var loading = setInterval(function() {
+    
     if(document.readyState === 'complete') {
-        stoploadinginterval = setInterval(stoploadingf,10);
+        
+        //revert scroller in the screen to its initial state
         document.body.style.overflow = 'scroll';
         clearInterval(loading);
-    }    
+        stoploadinginterval = setInterval(stoploadingf,10);
+    }else if(window.scrollY > 0){
+        window.scrollTo(0,0); //This will help display loading screen even if the initial scroll location is not zero
+    }
 }, 100);
 
 //Declare a variable that holds the loading screen
