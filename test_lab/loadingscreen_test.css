@@ -1,6 +1,7 @@
 /*Main loading screen style id*/
 #loadingscreen{
-    background-color: cyan;
+    background-color: white;
+    margin: auto;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -8,11 +9,29 @@
     left: 0px;
     opacity: 1;
     z-index: 9999;
+    display: block;
 }
 
 /*Loading screen items like h1 and others*/
 #loadingscreen > h1{
-    font-size: 400px;
-    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 50%;
     text-align: center;
+    z-index: 10000;
+    color: black;
+    font-weight: bold;
+}
+
+#loadingscreenimg{
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    z-index: 9999;
+    opacity: 0.3;
+}
+
+.progress-bar{
+    background-color: #19bebe !important;
 }

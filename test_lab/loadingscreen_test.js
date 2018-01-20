@@ -1,5 +1,3 @@
-
-
 //prevent scrolling
 document.body.style.overflow = 'hidden';
 
@@ -20,6 +18,7 @@ var loading = setInterval(function() {
 
 //Declare a variable that holds the loading screen
 var loadingscreen = document.getElementById("loadingscreen");
+var loadingscreenimg = document.getElementById("loadingscreenimg");
 
 //Special case for opacity, it can only be taken using getComputedStyle, donno why yet :P
 var objOpacityTemp = window.getComputedStyle(loadingscreen).getPropertyValue("opacity");
@@ -34,6 +33,7 @@ function stoploadingf() {
     if(objOpacity < 0){
         //Since the opacity will skip 0, this will restore it and remove negative opacity...
         loadingscreen.style.opacity = 0;
+        loadingscreen.style.display = 'none';
         //Stop the third animation
         clearInterval(stoploadinginterval);
         
@@ -41,6 +41,13 @@ function stoploadingf() {
     else
     {
         objOpacity -= 0.01;
+
+        //Tried some numbers and it turned out to be perfect with those, dont really know why XD
+        //but at least it looks cool now right?...right.....:)
+        loadingscreenimg.style.width += 80 + '%';
+        loadingscreenimg.style.left += 10 + '%';
+        loadingscreenimg.style.top += 10 + '%';
+
         //Can set opacity but cant get opacity ;-;
         loadingscreen.style.opacity = objOpacity;
     }
