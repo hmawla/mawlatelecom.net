@@ -10,18 +10,18 @@ CHANGELOG
 	
 ---8/1/2018
 
-	[WORKING] -MTWEB: Navagation in map.
+	[DELAYED] -MTWEB: Navagation in map.
 	[DONE] -MTWEB: Call button.
 	-
 	
 ---[late]/1/2018
 
-	[WORKING] -MTWEB: Website can now detect the nearest branch.
+	[DELAYED] -MTWEB: Website can now detect the nearest branch.
 	-
 	
 ---X/2/2018
 
-	[DELAYED] -MTWEB: Added loading screen.
+	[DONE] -MTWEB: Added loading screen.
 	[DONE] -MTWEB: twitter account ready.
 	[DONE] -MTWEB: Facebook account ready.
 	-MTWEB: Instagram account ready.
