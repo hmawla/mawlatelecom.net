@@ -15,7 +15,7 @@
     <?php
     include 'encryptor.php';
     if(isset($_POST['theText'])){
-        echo "Encrypted: " . doEncrypt($_POST['theText']);
+        echo "Encrypted: " . doEncrypt($_POST['theText']) . "<br>Decrypted: " . doDecrypt(doEncrypt($_POST['theText']));;
     }
     
 ?>
