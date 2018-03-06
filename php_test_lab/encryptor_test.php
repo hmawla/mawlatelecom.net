@@ -1,11 +1,5 @@
 <!DOCTYPE html>
-<?php
-    include 'encryptor.php';
-    if(isset($_POST['theText'])){
-        echo doEncrypt($_POST['theText']);
-    }
-    
-?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,5 +12,12 @@
         <input type="text" name="theText" id="theText">
         <button type="submit">Encrypt</button>
     </form>
+    <?php
+    include 'encryptor.php';
+    if(isset($_POST['theText'])){
+        echo "Encrypted: " . doEncrypt($_POST['theText']);
+    }
+    
+?>
 </body>
 </html>
