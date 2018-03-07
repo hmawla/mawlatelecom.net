@@ -1,28 +1,70 @@
-<?php
-include 'encryptor.php';
-session_start();
+<!DOCTYPE html>
+<html lang="en">
 
-$_SESSION['theEmail'] = $_POST['theEmail'];
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "testdatabase";
-$theEmail = doEncrypt($_POST['theEmail']);
-$thePassword = doEncrypt($_POST['thePassword']);
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <?php 
+        session_start();
+    ?>
 
-$sql = "INSERT INTO myusers (uemail, upass) VALUES ('" . $theEmail . "','" . $thePassword . "')";
+</head>
 
-if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
-} else {
-    $_SESSION['ConnError'] = $conn->error;
-    echo $_SESSION['ConnError'];
-}
+<body>
+    <form action="signup-exec.php" method="post">
+        <table>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="theEmail" id="theEmail" required><?php if(isset($_SESSION['emailExists'])){echo "Email already in use!"; unset($_SESSION['emailExists']);}  ?></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="thePassword" id="thePassword" required></td>
+            </tr>
+            <tr>
+                <td>Repeat Password:</td>
+                <td><input type="password" name="repPass" id="repPass" required></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="tel" name="thePhone" id="thePhone" maxlength="8"><?php if(isset($_SESSION['phoneExists'])){ echo "Phone already in use!"; unset($_SESSION['phoneExists']); }  ?></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Go</button>
+                </td>
+            </tr>
+        </table>
 
-mysqli_close($conn);
 
-?>
+    </form>
+    <script>
+        var thePass = document.getElementById("thePassword");
+        var confPass = document.getElementById("repPass");
+
+        function passValid() {
+            if (thePass.value == "") {
+                thePass.setCustomValidity("Password is required!");
+            } else if (thePass.value.length < 8) {
+                thePass.setCustomValidity("Password is too small!");
+            } else {
+                thePass.setCustomValidity('');
+            }
+
+            if (thePass.value != confPass.value) {
+                confPass.setCustomValidity("Passwords do not match!");
+            } else {
+                confPass.setCustomValidity('');
+            }
+
+        }
+        thePass.onkeyup = passValid;
+        confPass.onkeyup = passValid;
+    </script>
+</body>
+
+</html>

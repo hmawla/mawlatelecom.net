@@ -13,10 +13,10 @@
         <button type="submit">Encrypt</button>
     </form>
     <?php
-    include 'encryptor.php';
-    if(isset($_POST['theText'])){
-        echo "Encrypted: " . doEncrypt($_POST['theText']) . "<br>Decrypted: " . doDecrypt(doEncrypt($_POST['theText']));;
-    }
+        include 'encryptor.php';
+        if(isset($_POST['theText'])){
+            echo "Encrypted: " . doEncrypt($_POST['theText']) . "<br>Decrypted: " . doDecrypt(doEncrypt($_POST['theText']));;
+        }
     
 ?>
 </body>
