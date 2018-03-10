@@ -6,12 +6,15 @@
 
     $theEmail = $_POST['theEmailLogin'];
     $thePass = doEncrypt($_POST['thePassLogin']);
-
+    
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }
+    
     if(checkData(doEncrypt($theEmail),$thePass)){
-        echo "logged in: " . $theEmail;
+        
+        $_SESSION['theEmailLogin'] = $theEmail;
+        header('location:index.php');
     }
     else{
         echo "Invalid login";
