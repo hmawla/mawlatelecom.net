@@ -1,5 +1,7 @@
 <?php
-    function checkData($theEmail,$thePhone,$conn){
+    
+    function checkData($theEmail,$thePhone){
+        include 'connection.php';
         $res1 = true;
         $res2 = true;
 

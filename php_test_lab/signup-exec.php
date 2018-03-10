@@ -1,21 +1,20 @@
 <?php
 include 'encryptor.php';
 include 'checksignupdata.php';
+include 'connection.php';
+
 session_start();
 
 $_SESSION['theEmail'] = $_POST['theEmail'];
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "testdatabase";
 $theEmail = doEncrypt($_POST['theEmail']);
 $thePassword = doEncrypt($_POST['thePassword']);
 $thePhone = doEncrypt($_POST['thePhone']);
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-if(!checkData($theEmail,$thePhone,$conn)){
+
+if(!checkData($theEmail,$thePhone)){
    header('location:signup.php');
 }
 else{
