@@ -29,7 +29,7 @@
             </tr>
             <tr>
                 <td>Phone Number:</td>
-                <td><input type="tel" name="thePhone" id="thePhone" maxlength="8"><?php if(isset($_SESSION['phoneExists'])){ echo "Phone already in use!"; unset($_SESSION['phoneExists']); }  ?></td>
+                <td><input type="tel" name="thePhone" id="thePhone" maxlength="8" required><?php if(isset($_SESSION['phoneExists'])){ echo "Phone already in use!"; unset($_SESSION['phoneExists']); }  ?></td>
             </tr>
             <tr>
                 <td></td>
