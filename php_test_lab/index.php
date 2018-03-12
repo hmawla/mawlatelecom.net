@@ -17,7 +17,7 @@
                 echo "Logged as: " . $_SESSION['theEmailLogin'] . '<br><a href="logout-exec.php">Logout</a>';
             }
             else{
-                echo '<a href="login.php" >Login</a>';
+                echo '<a href="login.php">Login</a>';
             }
         ?>
     </header>

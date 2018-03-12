@@ -29,6 +29,8 @@
         </tr>
     </table>
     </form>
+    <br>
+    <a href="signup.php">Sign-Up</a>
     
 </body>
 </html>
