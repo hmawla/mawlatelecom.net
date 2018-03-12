@@ -14,7 +14,7 @@
         <h1>MAWLA TELECOM</h1>
         <?php
             if(isset($_SESSION['loggedIn'])){
-                echo "Logged as: " . $_SESSION['theEmailLogin'] . '<br><a href="logout-exec.php">Logout</a>';
+                echo "Logged as: " . $_SESSION['theNameLoggedIn'] . '<br><a href="logout-exec.php">Logout</a>';
             }
             else{
                 echo '<a href="login.php">Login</a>';

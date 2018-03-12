@@ -14,6 +14,7 @@
     if(checkData(doEncrypt($theEmail),$thePass)){
         
         $_SESSION['theEmailLogin'] = $theEmail;
+        $_SESSION['theNameLoggedIn'] = doDecrypt($_SESSION['theNameLoggedIn']);
         header('location:index.php');
     }
     else{

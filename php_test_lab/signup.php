@@ -16,8 +16,12 @@
     <form action="signup-exec.php" method="post">
         <table>
             <tr>
+                <td>Full Name:</td>
+                <td><input type="text" name="theName" id="theName"></td>
+            </tr>
+            <tr>
                 <td>Email:</td>
-                <td><input type="email" name="theEmail" id="theEmail" required><?php if(isset($_SESSION['emailExists'])){echo "Email already in use!"; unset($_SESSION['emailExists']);}  ?></td>
+                <td><input type="email" name="theEmail" id="theEmail" placeholder="example@example.com" required><?php if(isset($_SESSION['emailExists'])){echo " !Email already in use!"; unset($_SESSION['emailExists']);}  ?></td>
             </tr>
             <tr>
                 <td>Password:</td>
@@ -29,7 +33,7 @@
             </tr>
             <tr>
                 <td>Phone Number:</td>
-                <td><input type="tel" name="thePhone" id="thePhone" maxlength="8" required><?php if(isset($_SESSION['phoneExists'])){ echo "Phone already in use!"; unset($_SESSION['phoneExists']); }  ?></td>
+                <td><input type="tel" name="thePhone" id="thePhone" maxlength="8" placeholder="71234567" required><?php if(isset($_SESSION['phoneExists'])){ echo " !Phone already in use!"; unset($_SESSION['phoneExists']); }  ?></td>
             </tr>
             <tr>
                 <td></td>
