@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
     session_start();
+    include 'encryptor.php';
 ?>
 <html lang="en">
 <head>
@@ -13,8 +14,10 @@
     <header>
         <h1>MAWLA TELECOM</h1>
         <?php
-            if(isset($_SESSION['loggedIn'])){
-                echo "Logged as: " . $_SESSION['theNameLoggedIn'] . '<br><a href="logout-exec.php">Logout</a>';
+            if(isset($_COOKIE['loggedEmail'])){
+                $_SESSION['theNameLoggedIn'] = $_COOKIE['loggedName'];
+                $_SESSION['theEmailLogin'] = $_COOKIE['loggedEmail'];
+                echo "Logged as: " . doDecrypt($_SESSION['theNameLoggedIn']) . '<br><a href="logout-exec.php">Logout</a>';
             }
             else{
                 echo '<a href="login.php">Login</a>';

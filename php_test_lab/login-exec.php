@@ -14,7 +14,8 @@
     if(checkData(doEncrypt($theEmail),$thePass)){
         
         $_SESSION['theEmailLogin'] = $theEmail;
-        $_SESSION['theNameLoggedIn'] = doDecrypt($_SESSION['theNameLoggedIn']);
+        setcookie("loggedEmail", doEncrypt($theEmail), time() + (86400 * 30), "/");
+        setcookie("loggedName", $_SESSION['theNameLoggedIn'], time() + (86400 * 30), "/");
         header('location:index.php');
     }
     else{

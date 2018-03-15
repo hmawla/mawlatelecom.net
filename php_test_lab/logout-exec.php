@@ -1,5 +1,6 @@
 <?php
     session_start();
-    unset($_SESSION['loggedIn']);
+    setcookie("loggedEmail", "", time() - 10, "/");
+    setcookie("loggedName", "", time() - 10, "/");
     header('location:index.php');
 ?>
