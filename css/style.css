@@ -1,10 +1,3 @@
-/*--Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
-
-
 /*-- reset code --*/
 
 body {
@@ -89,9 +82,24 @@ body {
     font-weight: bold;
 }
 
+.navbar-default .navbar-nav>li>a.Shopping {
+    color: #ffffff;
+    background-color: #19bebe;
+    font-weight: bold;
+    box-shadow: #000000AA 0px 0px 2px;
+}
+
 .navbar-default {
     background-color: #FFFFFFAA;
     border-bottom: 2px solid #19bebe;
+}
+
+.navbar-default .navbar-nav>.active>a.Shopping,
+.navbar-default .navbar-nav>.active>a.Shopping:focus,
+.navbar-default .navbar-nav>.active>a.Shopping:hover {
+    color: #ffffff;
+    background-color: #FFb3b3;
+    font-weight: bold;
 }
 
 .navbar-default .navbar-brand {
@@ -114,6 +122,13 @@ body {
 .navbar-default .navbar-nav>li>a:hover {
     color: #FFFFFF;
     background-color: #999999AA;
+}
+
+.navbar-default .navbar-nav>li>a.Shopping:focus,
+.navbar-default .navbar-nav>li>a.Shopping:hover {
+    color: #19bebe;
+    background-color: #FFFFFFAA;
+    box-shadow: 1px 1px 20px #19bebe;
 }
 
 .navbar-brand h1 {
@@ -440,6 +455,7 @@ section.our-services i.fa {
     border-radius: 5px;
     width: 85px;
     color: #fff;
+    transition: 0.7s all;
     -webkit-transition: 0.7s all;
     -moz-transition: 0.7s all;
     -o-transition: 0.7s all;
