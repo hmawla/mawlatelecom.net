@@ -63,32 +63,104 @@
     </nav>
     <!-- Top Navbar end -->
     <!-- Header start -->
-    <div id="theHeader">
-        <!-- SlideShow here -->
+
+
+
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="padding-top:50px;padding-bottom:50px">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/4.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/4.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/4.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="card-deck">
+            <div class="card border-primary mb-3" style="margin-bottom: 10px;">
+                <img class="card-img-top" src="images/samsunggalaxys9.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Galaxy S9 Plus</h5>
+                    <p class="card-text">999$</p>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+            </div>
+            <div class="card border-primary mb-3" style="margin-bottom: 10px;">
+                <img class="card-img-top" src="images/samsunggalaxys9.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Galaxy S9 Plus</h5>
+                    <p class="card-text">999$</p>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+            </div>
+            <div class="card border-primary mb-3" style="margin-bottom: 10px;">
+                <img class="card-img-top" src="images/samsunggalaxys9.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Galaxy S9 Plus</h5>
+                    <p class="card-text">999$</p>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+            </div>
+            <div class="card border-primary mb-3" style="margin-bottom: 10px;">
+                <img class="card-img-top" src="images/samsunggalaxys9.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Galaxy S9 Plus</h5>
+                    <p class="card-text">999$</p>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
     </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nostrum natus recusandae mollitia quod, placeat blanditiis sunt nesciunt totam earum corrupti in eaque ut at rem. Beatae amet quasi inventore. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Itaque sequi, dolore cum accusamus dicta magnam, minus et sed officia asperiores exercitationem tempora ullam eligendi. Quibusdam minima quaerat id aliquam corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-        ea quos ex quibusdam assumenda obcaecati atque dicta omnis ut provident numquam reprehenderit, accusantium quae. Dicta fugit dolorem possimus placeat blanditiis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos rerum aut nihil possimus
-        molestiae, error suscipit deleniti eum repellat vero totam temporibus aliquid architecto accusantium iste cum, modi ad minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, non. Laborum excepturi, enim incidunt vero, unde
-        adipisci sed esse corrupti laboriosam vel, placeat voluptatibus quia facilis officiis. Quidem, nulla aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita pariatur sapiente obcaecati earum, quam itaque placeat eveniet harum
-        reprehenderit cumque nisi minima odit amet magnam, velit consequatur sed fuga? Aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum optio quae doloremque tenetur nulla enim dolore at, nobis amet, saepe repellendus debitis tempora
-        et quibusdam! Animi quasi iste velit nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, in quibusdam? Vitae, veniam. Debitis veritatis a ex dolorem cupiditate reiciendis quidem eius nisi similique modi, quibusdam fuga vel
-        dolores voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nostrum natus recusandae mollitia quod, placeat blanditiis sunt nesciunt totam earum corrupti in eaque ut at rem. Beatae amet quasi inventore. Lorem ipsum dolor
-        sit amet consectetur adipisicing elit. Itaque sequi, dolore cum accusamus dicta magnam, minus et sed officia asperiores exercitationem tempora ullam eligendi. Quibusdam minima quaerat id aliquam corrupti! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Quo ea quos ex quibusdam assumenda obcaecati atque dicta omnis ut provident numquam reprehenderit, accusantium quae. Dicta fugit dolorem possimus placeat blanditiis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
-        rerum aut nihil possimus molestiae, error suscipit deleniti eum repellat vero totam temporibus aliquid architecto accusantium iste cum, modi ad minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, non. Laborum excepturi,
-        enim incidunt vero, unde adipisci sed esse corrupti laboriosam vel, placeat voluptatibus quia facilis officiis. Quidem, nulla aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita pariatur sapiente obcaecati earum, quam itaque
-        placeat eveniet harum reprehenderit cumque nisi minima odit amet magnam, velit consequatur sed fuga? Aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum optio quae doloremque tenetur nulla enim dolore at, nobis amet, saepe repellendus
-        debitis tempora et quibusdam! Animi quasi iste velit nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, in quibusdam? Vitae, veniam. Debitis veritatis a ex dolorem cupiditate reiciendis quidem eius nisi similique modi, quibusdam
-        fuga vel dolores voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nostrum natus recusandae mollitia quod, placeat blanditiis sunt nesciunt totam earum corrupti in eaque ut at rem. Beatae amet quasi inventore. Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Itaque sequi, dolore cum accusamus dicta magnam, minus et sed officia asperiores exercitationem tempora ullam eligendi. Quibusdam minima quaerat id aliquam corrupti! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Quo ea quos ex quibusdam assumenda obcaecati atque dicta omnis ut provident numquam reprehenderit, accusantium quae. Dicta fugit dolorem possimus placeat blanditiis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
-        rerum aut nihil possimus molestiae, error suscipit deleniti eum repellat vero totam temporibus aliquid architecto accusantium iste cum, modi ad minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, non. Laborum excepturi,
-        enim incidunt vero, unde adipisci sed esse corrupti laboriosam vel, placeat voluptatibus quia facilis officiis. Quidem, nulla aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita pariatur sapiente obcaecati earum, quam itaque
-        placeat eveniet harum reprehenderit cumque nisi minima odit amet magnam, velit consequatur sed fuga? Aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum optio quae doloremque tenetur nulla enim dolore at, nobis amet, saepe repellendus
-        debitis tempora et quibusdam! Animi quasi iste velit nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, in quibusdam? Vitae, veniam. Debitis veritatis a ex dolorem cupiditate reiciendis quidem eius nisi similique modi, quibusdam
-        fuga vel dolores voluptas.
-    </p>
 
 
 </body>
