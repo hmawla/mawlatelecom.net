@@ -51,7 +51,15 @@
                     </li>
                 </ul>
                 <span class="navbar-text">
-                        Welcome: $USER
+                        <?php
+                            include 'encryptor.php';
+                            if(isset($_COOKIE['loggedName'])){
+                                echo "Welcome: " . doDecrypt($_COOKIE['loggedName']);
+                            }
+                            else{
+                                echo '<a href="login.php">Login</a>';
+                            }
+                        ?>
                     </span>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
