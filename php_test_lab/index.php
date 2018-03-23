@@ -54,7 +54,7 @@
                         <?php
                             include 'encryptor.php';
                             if(isset($_COOKIE['loggedName'])){
-                                echo "Welcome: " . doDecrypt($_COOKIE['loggedName']);
+                                echo "Welcome: " . doDecrypt($_COOKIE['loggedName']) . '<a href="logout-exec.php"> Logout</a>';
                             }
                             else{
                                 echo '<a href="login.php">Login</a>';
