@@ -63,17 +63,14 @@
     </nav>
     <!-- Top Navbar end -->
     <!-- Header start -->
-
-
-
     <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="padding-top:50px;padding-bottom:50px">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="padding-top:50px;padding-bottom:50px;border: solid 5px black;">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner">
+            <div class="carousel-inner" style="border: solid 5px black;">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="images/4.jpg" alt="First slide">
                 </div>
@@ -93,9 +90,10 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+        <h1>Featured Items:</h1>
 
-        <div class="card-deck">
-            <div class="card border-primary mb-3" style="margin-bottom: 10px;">
+        <div class="card-deck" style="border: solid 5px black;overflow:scroll; padding-top: 8px;">
+            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
                 <img class="card-img-top" src="images/samsunggalaxys9.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Galaxy S9 Plus</h5>
@@ -103,7 +101,7 @@
                     <a href="#" class="btn btn-primary">Add To Cart</a>
                 </div>
             </div>
-            <div class="card border-primary mb-3" style="margin-bottom: 10px;">
+            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
                 <img class="card-img-top" src="images/samsunggalaxys9.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Galaxy S9 Plus</h5>
@@ -111,7 +109,7 @@
                     <a href="#" class="btn btn-primary">Add To Cart</a>
                 </div>
             </div>
-            <div class="card border-primary mb-3" style="margin-bottom: 10px;">
+            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
                 <img class="card-img-top" src="images/samsunggalaxys9.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Galaxy S9 Plus</h5>
@@ -119,7 +117,7 @@
                     <a href="#" class="btn btn-primary">Add To Cart</a>
                 </div>
             </div>
-            <div class="card border-primary mb-3" style="margin-bottom: 10px;">
+            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
                 <img class="card-img-top" src="images/samsunggalaxys9.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Galaxy S9 Plus</h5>
@@ -127,6 +125,7 @@
                     <a href="#" class="btn btn-primary">Add To Cart</a>
                 </div>
             </div>
+
         </div>
 
         <div class="card-group">
@@ -161,6 +160,22 @@
 
 
     </div>
+    <script>
+        (function($) {
+            "use strict";
+
+            // manual carousel controls
+            $('.next').click(function() {
+                $('.carousel').carousel('next');
+                return false;
+            });
+            $('.prev').click(function() {
+                $('.carousel').carousel('prev');
+                return false;
+            });
+
+        })(jQuery);
+    </script>
 
 
 </body>
