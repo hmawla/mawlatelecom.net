@@ -203,6 +203,9 @@ function doEncrypt($theString){
         elseif($str[$i] == '.'){
             $str[$i] = '-';
         }
+        elseif($str[$i] == '-'){
+            $str[$i] = '#';
+        }
     }
     return implode($str);
 }
@@ -382,6 +385,9 @@ function doDecrypt($theString){
         }
         elseif($str[$i] == '-'){
             $str[$i] = '.';
+        }
+        elseif($str[$i] == '#'){
+            $str[$i] = '-';
         }
         elseif($str[$i] == 'Q'){
             $str[$i] = '0';
