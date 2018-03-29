@@ -1,5 +1,14 @@
 /*-- reset code --*/
 
+.slideanim {
+    border-radius: 20px;
+}
+
+.slideanim>figure>img {
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px black;
+}
+
 body {
     padding: 0;
     margin: 0;
