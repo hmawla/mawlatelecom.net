@@ -128,7 +128,12 @@
         }
 
         function attachMove() {
-            x = event.clientX; // Get the horizontal coordinate
+            if (isNaN(event.clientX)) {
+                x = Touch.clientX;
+            } else {
+                x = event.clientX; // Get the horizontal coordinate
+            }
+
             var coor;
             if (attached == true) {
                 var moveX = oldX - x;
