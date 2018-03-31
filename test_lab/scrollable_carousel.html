@@ -19,7 +19,7 @@
 
 </head>
 
-<body onload="setScrollableCarouselWidth(9);init();">
+<body onload="setScrollableCarouselWidth(9);">
     <br><br><br><br><br><br><br>
 
     <div class="container" style="overflow:hidden">
@@ -116,20 +116,19 @@
         var _window$popmotion = window.popmotion;
         var listen = _window$popmotion.listen;
         const theDivv = document.querySelector('#theDivv');
+        var pointer = _window$popmotion.pointer;
 
         function EnableAttached() {
             attached = true;
-            document.getElementById('tester').innerHTML = attached + '<br>' + Touch.clientX + '<br>' + e.Touch.clientX + '<br>' + e.touches[0].clientX;
+            document.getElementById('tester').innerHTML = attached + '<br>' + x + '<BR>';
         }
 
         function DisableAttached() {
             attached = false;
             document.getElementById('tester').innerHTML = attached;
-            document.getElementById('tester').innerHTML = attached + '<br>' + Touch.clientX + '<br>' + e.Touch.clientX + '<br>' + e.touches[0].clientX;
         }
 
         function attachMove() {
-            document.getElementById('tester').innerHTML = attached + '<br>' + Touch.clientX + '<br>' + e.Touch.clientX + '<br>' + e.touches[0].clientX;
             if (isNaN(event.clientX)) {
                 x = Touch.clientX;
             } else {
