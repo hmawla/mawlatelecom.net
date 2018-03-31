@@ -26,7 +26,7 @@
         <button onclick="movePrev()">Prev</button>
         <button onclick="moveNext()">Next</button>
         <br><br><br>
-        <div id="theDivv" onmousedown="oldX = event.clientX;" style="max-width:100%;min-width: 200px; max-height: 25%; min-height:400px; border: solid 5px black;padding:5px; overflow:hidden;">
+        <div id="theDivv" onmousedown="" style="max-width:100%;min-width: 200px; max-height: 25%; min-height:400px; border: solid 5px black;padding:5px; overflow:hidden;">
             <div id="theDiv" style="background-color:yellow;user-select:none;width: 300px;transform: translate(-50px,0px);">
                 <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
                     <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
@@ -132,6 +132,12 @@
         listen(document, 'mouseup touchend').start(DisableAttached);
 
         function EnableAttached() {
+            if (!isNaN(event.clientX)) {
+                oldX = event.clientX;
+            } else {
+                oldX = pointX;
+            }
+
             attached = true;
             document.getElementById('tester').innerHTML = attached + '<br>' + pointX + '<BR>';
         }
