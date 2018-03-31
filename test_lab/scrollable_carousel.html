@@ -152,7 +152,7 @@
         }
 
         listen(theDivv, 'mousedown touchstart').start(EnableAttached);
-        listen(document, 'mousemove').start(attachMove);
+        listen(document, 'mousemove touchmove').start(attachMove);
         listen(document, 'mouseup touchend').start(DisableAttached);
     </script>
 
