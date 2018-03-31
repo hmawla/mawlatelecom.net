@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="cache-control" content="max-age=0" />
     <meta http-equiv="cache-control" content="no-cache" />
@@ -146,7 +145,7 @@
 
         function DisableAttached() {
             attached = false;
-            document.getElementById('tester').innerHTML = attached;
+            document.getElementById('tester').innerHTML = attached + '<br>' + pointX + '<BR>';
         }
 
         function attachMove() {
@@ -154,7 +153,7 @@
             var coor;
             if (attached == true) {
                 moveX = oldX - x;
-                coor = "X coords: " + x + " old x: " + oldX + " Move: " + moveX + " Is attached? " + attached;
+                coor = "X coords: " + x + "<br> old x: " + oldX + "<br> Move: " + moveX + "<br> Is attached? " + attached;
                 var style = window.getComputedStyle(theDiv);
                 var matrix = new WebKitCSSMatrix(style.webkitTransform);
                 pos = matrix.m41;
@@ -162,7 +161,7 @@
                 oldX = x;
                 document.getElementById('Coordinator').innerHTML = coor;
             } else {
-                coor = "X coords: " + x + " old x: " + oldX + " Move: " + moveX + " Is attached? " + attached;
+                coor = "X coords: " + x + "<br> old x: " + oldX + "<br> Move: " + moveX + "<br> Is attached? " + attached;
                 document.getElementById('Coordinator').innerHTML = coor;
             }
 
