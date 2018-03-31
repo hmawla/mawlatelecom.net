@@ -116,11 +116,24 @@
         var _window$popmotion = window.popmotion;
         var listen = _window$popmotion.listen;
         const theDivv = document.querySelector('#theDivv');
-        var pointer = _window$popmotion.pointer;
+        var pointX, pointY;
+        const {
+            pointer
+        } = window.popmotion;
+
+        listen(theDivv, 'mousedown touchstart').start(EnableAttached);
+        listen(document, 'mousemove touchmove').start(() => {
+            pointerTracker = pointer()
+                .start(({
+                    x
+                }) => pointX = x);
+        });
+        listen(document, 'mousemove touchmove').start(attachMove);
+        listen(document, 'mouseup touchend').start(DisableAttached);
 
         function EnableAttached() {
             attached = true;
-            document.getElementById('tester').innerHTML = attached + '<br>' + x + '<BR>';
+            document.getElementById('tester').innerHTML = attached + '<br>' + pointX + '<BR>';
         }
 
         function DisableAttached() {
@@ -129,12 +142,7 @@
         }
 
         function attachMove() {
-            if (isNaN(event.clientX)) {
-                x = Touch.clientX;
-            } else {
-                x = event.clientX; // Get the horizontal coordinate
-            }
-
+            x = pointX;
             var coor;
             if (attached == true) {
                 var moveX = oldX - x;
@@ -156,10 +164,6 @@
         function setScrollableCarouselWidth(theRightWidth) {
             theDiv.style.width = 300 * theRightWidth + "px";
         }
-
-        listen(theDivv, 'mousedown touchstart').start(EnableAttached);
-        listen(document, 'mousemove touchmove').start(attachMove);
-        listen(document, 'mouseup touchend').start(DisableAttached);
     </script>
 
 </body>
