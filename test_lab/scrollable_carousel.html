@@ -119,15 +119,17 @@
 
         function EnableAttached() {
             attached = true;
-            document.getElementById('tester').innerHTML = attached;
+            document.getElementById('tester').innerHTML = attached + '<br>' + Touch.clientX + '<br>' + e.Touch.clientX + '<br>' + e.touches[0].clientX;
         }
 
         function DisableAttached() {
             attached = false;
             document.getElementById('tester').innerHTML = attached;
+            document.getElementById('tester').innerHTML = attached + '<br>' + Touch.clientX + '<br>' + e.Touch.clientX + '<br>' + e.touches[0].clientX;
         }
 
         function attachMove() {
+            document.getElementById('tester').innerHTML = attached + '<br>' + Touch.clientX + '<br>' + e.Touch.clientX + '<br>' + e.touches[0].clientX;
             if (isNaN(event.clientX)) {
                 x = Touch.clientX;
             } else {
