@@ -108,10 +108,7 @@
     </div>
 
     <script>
-        var newX;
-        var moveX;
-        var oldX;
-        var pos;
+        var newX, moveX, oldX, pos;
         var theDiv = document.getElementById('theDiv');
         var _window$popmotion = window.popmotion;
         var listen = _window$popmotion.listen;
@@ -154,11 +151,32 @@
             var style = window.getComputedStyle(theDiv);
             var matrix = new WebKitCSSMatrix(style.webkitTransform);
             pos = matrix.m41;
-            theDiv.style.transform = "translateX(" + (pos - moveX) + "px)";
+            if (pos < 50) {
+                theDiv.style.transform = "translateX(" + (pos - moveX) + "px)";
+            } else {
+                console.log("Working...")
+                easeTo(theDiv, pos, 0);
+
+            }
+
             oldX = newX;
             document.getElementById('Coordinator').innerHTML = coor;
 
 
+        }
+
+        function easeTo(theElement, initPos, toPos) {
+
+            var startEasing = setInterval(function() {
+                initPos -= 2;
+                if (initPos > toPos) theElement.style.transform = "translateX(" + (initPos) + "px)";
+                else {
+                    clearInterval(startEasing);
+                    theElement.style.transform = "translateX(" + (0) + "px)";
+                }
+
+                console.log(initPos);
+            }, 20);
         }
 
         function setScrollableCarouselWidth(theRightWidth) {
