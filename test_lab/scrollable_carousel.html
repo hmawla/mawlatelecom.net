@@ -140,6 +140,7 @@
         function stopTracking() {
             tracking = false;
             pointerTracker.stop();
+            console.log(pos);
             if (pos > 0) {
                 easeTo(theDiv, pos, 0);
             } else if (pos < (theBigDiv.offsetWidth - 2700)) {
@@ -180,7 +181,8 @@
                 startEasingNegative = setInterval(function() {
                     theMover -= easeSpeed;
                     theElement.style.transform = "translateX(" + (theMover) + "px)";
-                    if (theMover < 0) {
+                    if (theMover < toPos) {
+                        pos = toPos
                         clearInterval(startEasingNegative);
                         theElement.style.transform = "translateX(" + toPos + "px)";
                     }
@@ -191,6 +193,7 @@
                     theElement.style.transform = "translateX(" + (theMover) + "px)";
                     if (theMover > toPos) {
                         clearInterval(startEasingPositive);
+                        pos = toPos;
                         theElement.style.transform = "translateX(" + toPos + "px)";
                     }
                 }, easeSpeed * 4);
