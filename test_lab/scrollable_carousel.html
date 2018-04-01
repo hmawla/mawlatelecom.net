@@ -133,10 +133,7 @@
                 }) => pointX = x);
             pointerTracker;
             oldX = pointerTracker.x;
-
-            console.log("f- oldX = " + oldX + "    pointX = " + pointX);
             tracking = true;
-            console.log("s- oldX = " + oldX + "    pointX = " + pointX);
             document.getElementById('tester').innerHTML = tracking + '<br>' + pointX + '<BR>';;
         }
 
@@ -150,14 +147,9 @@
         listen(document, 'mouseup touchend').start(stopTracking);
 
         function attachMove() {
-
-            console.log("1-x = " + newX);
             newX = pointX;
-            console.log("2-x = " + newX);
             var coor;
-            console.log("1-moveX = " + moveX + "    oldX = " + oldX);
             moveX = oldX - newX;
-            console.log("2-moveX = " + moveX);
             coor = "Position" + pos + "<br>X coords: " + newX + "<br> old x: " + oldX + "<br> Move: " + moveX + "<br> Is attached? " + tracking;
             var style = window.getComputedStyle(theDiv);
             var matrix = new WebKitCSSMatrix(style.webkitTransform);
@@ -168,10 +160,6 @@
 
 
         }
-        document.body.addEventListener('mousedown', startDragging, false);
-        document.body.addEventListener('mouseup', startScrolling, false);
-        document.body.addEventListener('touchstart', startDragging, false);
-        document.body.addEventListener('touchend', startScrolling, false);
 
         function setScrollableCarouselWidth(theRightWidth) {
             theDiv.style.width = 300 * theRightWidth + "px";
