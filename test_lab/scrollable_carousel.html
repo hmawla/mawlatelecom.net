@@ -127,11 +127,12 @@
         onTracking.start(attachMove);
 
         const startTracking = () => {
-            tracking = true;
+
             pointerTracker = pointer()
                 .start(({
                     x
                 }) => pointX = x);
+            tracking = true;
             console.log("f- oldX = " + oldX + "    pointX = " + pointX);
             oldX = pointX;
             console.log("s- oldX = " + oldX + "    pointX = " + pointX);
@@ -139,8 +140,8 @@
         }
 
         const stopTracking = () => {
+            pointerTracker.stop();
             tracking = false;
-            listen(document, 'mousemove touchmove').start(attachMove).stop();
             document.getElementById('tester').innerHTML = attached + '<br>' + pointX + '<BR>';
         };
 
