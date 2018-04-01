@@ -124,6 +124,7 @@
         var pointerTracker;
         var tracking = false;
         const onTracking = listen(document, 'mousemove touchmove').filter(() => tracking);
+        onTracking.start(attachMove);
 
         const startTracking = () => {
             tracking = true;
@@ -134,13 +135,11 @@
             console.log("f- oldX = " + oldX + "    pointX = " + pointX);
             oldX = pointX;
             console.log("s- oldX = " + oldX + "    pointX = " + pointX);
-            onTracking.start(attachMove);
             document.getElementById('tester').innerHTML = attached + '<br>' + pointX + '<BR>';;
         }
 
         const stopTracking = () => {
             tracking = false;
-            if (pointerTracker) pointerTracker.stop();
             listen(document, 'mousemove touchmove').start(attachMove).stop();
             document.getElementById('tester').innerHTML = attached + '<br>' + pointX + '<BR>';
         };
