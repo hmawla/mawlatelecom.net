@@ -109,8 +109,8 @@
 
     <script>
         var oldX;
-        var moveX;
-        var x;
+        var moveX = 0;
+        var newX;
         var pos;
         var attached = false;
         var theDiv = document.getElementById('theDiv');
@@ -121,49 +121,57 @@
         const {
             pointer
         } = window.popmotion;
+        var pointerTracker;
+        var tracking = false;
+        const onTracking = listen(document, 'mousemove touchmove').filter(() => tracking);
 
-        listen(theDivv, 'mousedown touchstart').start(EnableAttached);
-        listen(document, 'mousemove touchmove').start(() => {
+        const startTracking = () => {
+            tracking = true;
             pointerTracker = pointer()
                 .start(({
                     x
                 }) => pointX = x);
-        });
-        listen(document, 'mousemove touchmove').start(attachMove);
-        listen(document, 'mouseup touchend').start(DisableAttached);
+            console.log("f- oldX = " + oldX + "    pointX = " + pointX);
+            oldX = pointX;
+            console.log("s- oldX = " + oldX + "    pointX = " + pointX);
+            onTracking.start(attachMove);
+            document.getElementById('tester').innerHTML = attached + '<br>' + pointX + '<BR>';;
+        }
+
+        const stopTracking = () => {
+            tracking = false;
+            if (pointerTracker) pointerTracker.stop();
+            listen(document, 'mousemove touchmove').start(attachMove).stop();
+            document.getElementById('tester').innerHTML = attached + '<br>' + pointX + '<BR>';
+        };
+
+        listen(theDivv, 'mousedown touchstart').start(startTracking);
+        listen(document, 'mouseup touchend').start(stopTracking);
 
         function EnableAttached() {
-            if (!isNaN(event.clientX)) {
-                oldX = event.clientX;
-            } else {
-                oldX = pointX;
-            }
 
-            attached = true;
-            document.getElementById('tester').innerHTML = attached + '<br>' + pointX + '<BR>';
         }
 
         function DisableAttached() {
-            attached = false;
-            document.getElementById('tester').innerHTML = attached + '<br>' + pointX + '<BR>';
+
         }
 
         function attachMove() {
-            x = pointX;
+            moveX = 0;
+            console.log("1-x = " + newX);
+            newX = pointX;
+            console.log("2-x = " + newX);
             var coor;
-            if (attached == true) {
-                moveX = oldX - x;
-                coor = "X coords: " + x + "<br> old x: " + oldX + "<br> Move: " + moveX + "<br> Is attached? " + attached;
-                var style = window.getComputedStyle(theDiv);
-                var matrix = new WebKitCSSMatrix(style.webkitTransform);
-                pos = matrix.m41;
-                theDiv.style.transform = "translateX(" + (pos - moveX) + "px)";
-                oldX = x;
-                document.getElementById('Coordinator').innerHTML = coor;
-            } else {
-                coor = "X coords: " + x + "<br> old x: " + oldX + "<br> Move: " + moveX + "<br> Is attached? " + attached;
-                document.getElementById('Coordinator').innerHTML = coor;
-            }
+            console.log("1-moveX = " + moveX + "    oldX = " + oldX);
+            moveX = oldX - newX;
+            console.log("2-moveX = " + moveX);
+            coor = "Position" + pos + "<br>X coords: " + newX + "<br> old x: " + oldX + "<br> Move: " + moveX + "<br> Is attached? " + attached;
+            var style = window.getComputedStyle(theDiv);
+            var matrix = new WebKitCSSMatrix(style.webkitTransform);
+            pos = matrix.m41;
+            theDiv.style.transform = "translateX(" + (pos - moveX) + "px)";
+            oldX = newX;
+            document.getElementById('Coordinator').innerHTML = coor;
 
 
         }
