@@ -20,6 +20,7 @@ var theBigDiv = document.getElementById('theDivv');
 var _window$popmotion = window.popmotion;
 var listen = _window$popmotion.listen;
 const theDivv = document.querySelector('#theDivv');
+const theCard = document.querySelector('.card');
 console.log(theBigDiv.offsetWidth);
 var pointX;
 const {
@@ -106,6 +107,6 @@ function easeTo(theElement, initPos, toPos) {
     }
 }
 
-function setScrollableCarouselWidth(theRightWidth) {
-    theDiv.style.width = 300 * theRightWidth + "px";
+function setScrollableCarouselWidth() {
+    theDiv.style.width = (theCard.offsetWidth + 12) * theDiv.childElementCount + "px";
 }
