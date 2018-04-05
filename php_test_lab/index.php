@@ -14,8 +14,13 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/scrollable_carousel.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollable_carousel.js"></script>
+    <script src="js/popmotion.global.min.js"></script>
+
+
 </head>
 
 <body>
@@ -39,6 +44,9 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Samsung</a>
                             <a class="dropdown-item" href="#">Huawei</a>
+                            <a class="dropdown-item" href="#">Apple</a>
+                            <a class="dropdown-item" href="#">lG</a>
+                            <a class="dropdown-item" href="#">Sony</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -47,6 +55,7 @@
                             </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Touch</a>
+                            <a class="dropdown-item" href="#">Alfa</a>
                         </div>
                     </li>
                 </ul>
@@ -72,13 +81,13 @@
     <!-- Top Navbar end -->
     <!-- Header start -->
     <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="padding-top:50px;padding-bottom:50px;border: solid 5px black;">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="padding-top:50px;padding-bottom:50px:">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner" style="border: solid 5px black;">
+            <div class="carousel-inner" style="">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="images/4.jpg" alt="First slide">
                 </div>
@@ -99,6 +108,8 @@
             </a>
         </div>
         <h1>Featured Items:</h1>
+
+        <!--
 
         <div class="card-deck" style="border: solid 5px black;overflow:scroll; padding-top: 8px;">
             <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
@@ -168,6 +179,103 @@
 
 
     </div>
+    -->
+
+<div onload="setScrollableCarouselWidth(9);">
+
+<p id="Coordinator"></p>
+<p id="tester"></p>
+<div class="container" style="overflow:hidden">
+    <button onclick="movePrev()">Prev</button>
+    <button onclick="moveNext()">Next</button>
+    <br><br><br>
+    <div id="theDivv" onmousedown="" style="max-width:100%;min-width: 200px; max-height: 25%; min-height:400px; border: solid 5px black;padding:5px; overflow:hidden;">
+        <div id="theDiv" style="background-color:yellow;user-select:none;width: 300px;transform: translate(-50px,0px);">
+            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
+                <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Galaxy S9 Plus</h5>
+                    <p class="card-text">999$</p>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+            </div>
+            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
+                <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Galaxy S9 Plus</h5>
+                    <p class="card-text">999$</p>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+            </div>
+            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
+                <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Galaxy S9 Plus</h5>
+                    <p class="card-text">999$</p>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+            </div>
+            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
+                <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Galaxy S9 Plus</h5>
+                    <p class="card-text">999$</p>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+            </div>
+            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
+                <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Galaxy S9 Plus</h5>
+                    <p class="card-text">999$</p>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+            </div>
+            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
+                <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Galaxy S9 Plus</h5>
+                    <p class="card-text">999$</p>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+            </div>
+            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
+                <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Galaxy S9 Plus</h5>
+                    <p class="card-text">999$</p>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+            </div>
+            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
+                <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Galaxy S9 Plus</h5>
+                    <p class="card-text">999$</p>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+            </div>
+            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
+                <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Galaxy S9 Plus</h5>
+                    <p class="card-text">999$</p>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+ </div>
+
+
+
+
+
+
+
     <script>
         (function($) {
             "use strict";
@@ -185,7 +293,7 @@
         })(jQuery);
     </script>
 
-
+<script src="js/scrollable_carousel.js"></script>
 </body>
 
 </html>
