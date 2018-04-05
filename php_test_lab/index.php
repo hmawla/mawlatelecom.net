@@ -17,10 +17,7 @@
     <link rel="stylesheet" href="css/scrollable_carousel.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/scrollable_carousel.js"></script>
     <script src="js/popmotion.global.min.js"></script>
-
-
 </head>
 
 <body>
@@ -268,8 +265,6 @@
     </div>
 
 </div>
- </div>
-
 
 
 
