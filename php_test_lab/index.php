@@ -20,7 +20,7 @@
     <script src="js/popmotion.global.min.js"></script>
 </head>
 
-<body>
+<body onload="setScrollableCarouselWidth(9);">
     <!-- Top Navbar start -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
         <div class="container">
@@ -104,167 +104,94 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+
         <h1>Featured Items:</h1>
-
-        <!--
-
-        <div class="card-deck" style="border: solid 5px black;overflow:scroll; padding-top: 8px;">
-            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
-                <img class="card-img-top" src="images/samsunggalaxys9.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Galaxy S9 Plus</h5>
-                    <p class="card-text">999$</p>
-                    <a href="#" class="btn btn-primary">Add To Cart</a>
+        <button onclick="movePrev()">Prev</button>
+        <button onclick="moveNext()">Next</button>
+        <br><br><br>
+        <div id="theDivv" onmousedown="" style="max-width:100%;min-width: 200px; max-height: 25%; min-height:400px; border: solid 5px black;padding:5px; overflow:hidden;">
+            <div id="theDiv" style="background-color:yellow;user-select:none;width: 300px;transform: translate(-50px,0px);">
+                <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
+                    <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Galaxy S9 Plus</h5>
+                        <p class="card-text">999$</p>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
-                <img class="card-img-top" src="images/samsunggalaxys9.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Galaxy S9 Plus</h5>
-                    <p class="card-text">999$</p>
-                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
+                    <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Galaxy S9 Plus</h5>
+                        <p class="card-text">999$</p>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
-                <img class="card-img-top" src="images/samsunggalaxys9.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Galaxy S9 Plus</h5>
-                    <p class="card-text">999$</p>
-                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
+                    <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Galaxy S9 Plus</h5>
+                        <p class="card-text">999$</p>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
-                <img class="card-img-top" src="images/samsunggalaxys9.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Galaxy S9 Plus</h5>
-                    <p class="card-text">999$</p>
-                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
+                    <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Galaxy S9 Plus</h5>
+                        <p class="card-text">999$</p>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
+                    <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Galaxy S9 Plus</h5>
+                        <p class="card-text">999$</p>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
+                    <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Galaxy S9 Plus</h5>
+                        <p class="card-text">999$</p>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
+                    <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Galaxy S9 Plus</h5>
+                        <p class="card-text">999$</p>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
+                    <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Galaxy S9 Plus</h5>
+                        <p class="card-text">999$</p>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
+                    <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Galaxy S9 Plus</h5>
+                        <p class="card-text">999$</p>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
                 </div>
             </div>
 
         </div>
-
-        <div class="card-group">
-            <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-    </div>
-    -->
-
-<div onload="setScrollableCarouselWidth(9);">
-
-<p id="Coordinator"></p>
-<p id="tester"></p>
-<div class="container" style="overflow:hidden">
-    <button onclick="movePrev()">Prev</button>
-    <button onclick="moveNext()">Next</button>
-    <br><br><br>
-    <div id="theDivv" onmousedown="" style="max-width:100%;min-width: 200px; max-height: 25%; min-height:400px; border: solid 5px black;padding:5px; overflow:hidden;">
-        <div id="theDiv" style="background-color:yellow;user-select:none;width: 300px;transform: translate(-50px,0px);">
-            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
-                <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Galaxy S9 Plus</h5>
-                    <p class="card-text">999$</p>
-                    <a href="#" class="btn btn-primary">Add To Cart</a>
-                </div>
-            </div>
-            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
-                <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Galaxy S9 Plus</h5>
-                    <p class="card-text">999$</p>
-                    <a href="#" class="btn btn-primary">Add To Cart</a>
-                </div>
-            </div>
-            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
-                <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Galaxy S9 Plus</h5>
-                    <p class="card-text">999$</p>
-                    <a href="#" class="btn btn-primary">Add To Cart</a>
-                </div>
-            </div>
-            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
-                <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Galaxy S9 Plus</h5>
-                    <p class="card-text">999$</p>
-                    <a href="#" class="btn btn-primary">Add To Cart</a>
-                </div>
-            </div>
-            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
-                <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Galaxy S9 Plus</h5>
-                    <p class="card-text">999$</p>
-                    <a href="#" class="btn btn-primary">Add To Cart</a>
-                </div>
-            </div>
-            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
-                <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Galaxy S9 Plus</h5>
-                    <p class="card-text">999$</p>
-                    <a href="#" class="btn btn-primary">Add To Cart</a>
-                </div>
-            </div>
-            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
-                <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Galaxy S9 Plus</h5>
-                    <p class="card-text">999$</p>
-                    <a href="#" class="btn btn-primary">Add To Cart</a>
-                </div>
-            </div>
-            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
-                <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Galaxy S9 Plus</h5>
-                    <p class="card-text">999$</p>
-                    <a href="#" class="btn btn-primary">Add To Cart</a>
-                </div>
-            </div>
-            <div class="card text-center border-primary" style="margin-bottom: 10px;border: solid 5px black;">
-                <img style="cursor: pointer;pointer-events: none;" class="card-img-top" src="samsunggalaxys9.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Galaxy S9 Plus</h5>
-                    <p class="card-text">999$</p>
-                    <a href="#" class="btn btn-primary">Add To Cart</a>
-                </div>
-            </div>
-        </div>
-
     </div>
 
-</div>
+
+
+
+
 
 
 
@@ -288,7 +215,7 @@
         })(jQuery);
     </script>
 
-<script src="js/scrollable_carousel.js"></script>
+    <script src="js/scrollable_carousel.js"></script>
 </body>
 
 </html>
